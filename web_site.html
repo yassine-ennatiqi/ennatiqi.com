@@ -50,14 +50,14 @@
         .product2{
             background-color: rgb(0 0 0);
             border: 0;
+            width: 100%;
         }
         .image2{
-            max-width: 100%;
+            width: 100%;
             height: auto;
         }
         .image3{
-            background-color: rgb(0 0 0);
-            max-width: 1000%;
+            width: 100%;
             height: auto;
         }
         /* .image3:hover{
@@ -67,42 +67,53 @@
             padding-top: 17px;
         }
          */
-         .bark{
+         /* .bark{
             background-color: #f5f5f7;
             color: #000000;
-         }
+         } */
+         .product3{
+            background-color: #f5f5f7;
+            border: 0;
+            width: 100%;
+
+            
+        }
     </style>
 </head>
 <body>
-    <div class="nav nav-bar">
-        <div class="row p-0 text-white text-center d-flex align-items-center position-fixed start-0 end-0 " style="background-color: #556477;">
-            <div class="col-md-1 col-sm-2">
-                <a href="web_site.html" type="button" class="text-decoration-none btn btnHome text-white border border-1 ms-1">Home</a>
-            </div>
-            <div class="col-md-1 col-sm-2">
-                <a href="contact.html" class="text-decoration-none btn btnContact text-white border border-1 ">Contact</a>
-            </div>
-            <div class="col-md-1 col-sm-auto"></div>
-            <div class="col-md-1 col-sm-auto"></div>
-            <div class="col-md-5 col-sm-6">
-                <form class="d-flex ">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn text-white border bordr-white btnSearsh" type="submit" >Search</button>
-                </form>
-            </div>
-            
-            <div class="col-md-3 col-sm-1">
-                <div>
-                    <img src="yass.png" alt="logo" style="height: 50px; width: 90p;">
-                </div>          
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 pt-0">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Frequently asked questions</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">About the store</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">payment methods</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Shipping and handling</a>
+              </li>
+            </ul>
+          </div>
+            <img src="Watch (1).png" alt="logo" style="height: 50px; width: 90p;">
         </div>
-    </div>
-    <br>
-    <br>
+      </nav>
     <div class="position-static">
         <div class="row text-center ">
-            <div class="col-md-12 card border-0 bark position-static">
+            <div class="col-md-12 card border-0 text-white bg-dark position-static">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 p-5">
                         <div class="card-title h1">
@@ -118,7 +129,7 @@
                             <div class="row">
                                 <div class="col-md-12 text-center">
                                     <p class="card-text mt-3">
-                                        <a href="#" class="btn btnBuy">Buy</a>
+                                        <a href="#" class="btn btnBuy rounded-5">Buy</a>
                                         <a href="#" class="ps-3 text-decoration-none learnMore">Learn more ></a>
                                     </p>
                                 </div>
@@ -132,8 +143,7 @@
             </div>
         </div>
     </div>
-    <br>
-    <div class="card text-center text-white p-5 border border-0 rounded-0 position-static product2">
+    <div class="card text-center text-white pt-5 border border-0 rounded-0 position-static product2">
         <div class="card-title border border-0 ">
             <p class="h1">Smarter. Brighter. Mightier.</p>
         </div>
@@ -152,10 +162,94 @@
     <div>
         <img class="image2 img-fluid" src="tile_s9_avail__h13v168dzseq_medium_2x.jpg" alt="image2">
     </div>
-    <!-- <div class="d-flex ">
-        <img class="image3 img-fluid" src="hero_avail__utx9u9rrh7mu_small_2x-removebg-preview.png" alt="image2">
-        <img class="image3 img-fluid" src="hero_avail__utx9u9rrh7mu_small_2x-removebg-preview.png" alt="image2">
-    </div> -->
+    
+    <div class="card text-center pt-5 border border-0 rounded-0 position-static product3">
+        <div class="card-title border border-0 ">
+            <p class="h1">Next level adventure.</p>
+        </div>
+        <div class="card-text h5">
+            <p>From $799</p>
+        </div>
+        <div class="card-text h5">
+            <p style="color: #ff791b;">Currently Unavailable</p>
+        </div>
+        <div class="card-text h5">
+            <p>
+                <a href="" class="ps-3 text-decoration-none " >Learn more ></a>
+            </p>
+        </div>
+    </div>
+    <div>
+        <img class="image3 img-fluid" src="tile_ultra_2__cu2x3w2l0zwy_small_2x.jpg" alt="image3">
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-5">Which Apple Watch is right for you?</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-center border-0">
+                    <div class="card-image">
+                        <img src="compare_se__b3w7lpf3fahe_small_2x.jpg" class="w-75" alt="image4">
+                    </div>
+                    <div class="card-title h5">
+                        Apple Watch SE
+                    </div>
+                    <div class="card-text">
+                        All the essentials.
+                        <br>Light on price.
+                        <br>
+                        <br>From $249
+                        <br><a href="#" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
+                        <br><a href="#" class="ps-3 text-decoration-none ">Learn more ></a>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center border-0">
+                    <div class="card-image">
+                        <img src="compare_s9__gbbla3ej3p6y_small_2x.jpg" class="w-75" alt="image4">
+                    </div>
+                    <div class="card-title h5">
+                        Apple Watch Series 9
+                    </div>
+                    <div class="card-text">
+                        Powerful sensors,
+                        <br>advanced health features.
+                        <br>
+                        <br>From $399
+                        <br><a href="#" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
+                        <br><a href="#" class="ps-3 text-decoration-none ">Learn more ></a>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-center border-0">
+                    <div class="card-image">
+                        <img src="compare_ultra2__fzfgtok6moeq_small_2x.jpg" class="w-75" alt="image4">
+                    </div>
+                    <div class="card-title h5">
+                        Apple Watch Ultra 2
+                    </div>
+                    <div class="card-text ">
+                        The most rugged
+                        <br>and capable.
+                        <br>
+                        <br>$799
+                        <br><a href="#" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
+                        <br><a href="#" class="ps-3 text-decoration-none ">Learn more ></a>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
