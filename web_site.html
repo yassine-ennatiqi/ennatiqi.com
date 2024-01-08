@@ -10,6 +10,8 @@
         body {
             overflow-x: hidden; /* Hide scrollbars */
             /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            font-family: Consolas;
+            user-select: none;
         }
         .btnSearsh:hover{
             background-color: rgb(153 165 181);
@@ -19,11 +21,11 @@
         }
         .btnContact:hover{
             background-color: rgb(153 165 181);
-        }
+        }       
         .btnBuy{
             height: 40px;
             width: 80px; 
-            background-color: #697c94; 
+            background-color: #ff791b; 
             color: #000000;
         }
         .btnBuy:hover{
@@ -35,7 +37,7 @@
             color: #697c94;
         }
         .learnMore:hover{
-            color: #039dda;
+            color: #ff791b;
         }
         .image1{
             height: 300px;
@@ -71,17 +73,34 @@
             background-color: #f5f5f7;
             color: #000000;
          } */
-         .product3{
+        .product3{
             background-color: #f5f5f7;
             border: 0;
             width: 100%;
+        }
+        .buyPic{
+            transition: all .3s;
+            margin-bottom: 30px;
+        }
+        .buyPic:hover{
+            transform: scale(1.1); 
 
-            
+        }
+        .IconSocialMedia{
+            color: #ff791b;
+            transition: all .3s;
+        }
+        .IconSocialMedia:hover{
+            transform: scale(1.3); 
+            position: static;       
+        }
+        .logo:hover{
+            transform: scale(1.2);      
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 pt-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 pt-0" style="position: fixed; width: 100%;z-index: 1;">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -89,7 +108,7 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="web_site.html">Home</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="#">Contact</a>
@@ -101,19 +120,21 @@
                 <a class="nav-link" href="#">About the store</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#">payment methods</a>
+                <a class="nav-link" href="payment.html">payment methods</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="#">Shipping and handling</a>
               </li>
             </ul>
           </div>
-            <img src="Watch (1).png" alt="logo" style="height: 50px; width: 90p;">
+            <img src="Watch__1_-removebg-preview.png" alt="logo" class="logo pt-1" style="height: 50px; width: 90p;">
         </div>
       </nav>
+      <br><br>
+
     <div class="position-static">
         <div class="row text-center ">
-            <div class="col-md-12 card border-0 text-white bg-dark position-static">
+            <div class="col-md-12 card border-0 text-white position-static" style="background-color: #000000;">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 p-5">
                         <div class="card-title h1">
@@ -123,14 +144,14 @@
                             to love.
                         </div>
                         <div class="card-body">
-                            <div class="card-text h5" style="color: #ff791b;">
+                            <div class="card-text h5" style="color: #6c819e;">
                                 From $249
                             </div>
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <p class="card-text mt-3">
-                                        <a href="#" class="btn btnBuy rounded-5">Buy</a>
-                                        <a href="#" class="ps-3 text-decoration-none learnMore">Learn more ></a>
+                                    <p class="card-text d-flex align-items-center flex-column flex-md-row justify-content-center mt-3">
+                                        <a href="buy.html" class="btn btnBuy rounded-5">Buy</a>
+                                        <a href="learn.html" class="ps-3 text-decoration-none learnMore">Learn more ></a>
                                     </p>
                                 </div>
                             </div>
@@ -143,6 +164,7 @@
             </div>
         </div>
     </div>
+    
     <div class="card text-center text-white pt-5 border border-0 rounded-0 position-static product2">
         <div class="card-title border border-0 ">
             <p class="h1">Smarter. Brighter. Mightier.</p>
@@ -155,12 +177,12 @@
         </div>
         <div class="card-text h5">
             <p>
-                <a href="" class="ps-3 text-decoration-none " >Learn more ></a>
+                <a href="learn.html" class="ps-3 text-decoration-none " >Learn more ></a>
             </p>
         </div>
     </div>
-    <div>
-        <img class="image2 img-fluid" src="tile_s9_avail__h13v168dzseq_medium_2x.jpg" alt="image2">
+    <div >
+        <img class="image2 img-fluid " src="tile_s9_avail__h13v168dzseq_medium_2x.jpg" alt="image2">
     </div>
     
     <div class="card text-center pt-5 border border-0 rounded-0 position-static product3">
@@ -175,7 +197,7 @@
         </div>
         <div class="card-text h5">
             <p>
-                <a href="" class="ps-3 text-decoration-none " >Learn more ></a>
+                <a href="learn.html" class="ps-3 text-decoration-none " >Learn more ></a>
             </p>
         </div>
     </div>
@@ -187,10 +209,10 @@
     </div>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-4">
-                <div class="card text-center border-0">
+            <div class="col-12 col-md-4" >
+                <div class="card text-center border-0" style="position: static;">
                     <div class="card-image">
-                        <img src="compare_se__b3w7lpf3fahe_small_2x.jpg" class="w-75" alt="image4">
+                        <img src="compare_se__b3w7lpf3fahe_small_2x.jpg" class="w-75 buyPic" alt="image4">
                     </div>
                     <div class="card-title h5">
                         Apple Watch SE
@@ -200,37 +222,37 @@
                         <br>Light on price.
                         <br>
                         <br>From $249
-                        <br><a href="#" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
-                        <br><a href="#" class="ps-3 text-decoration-none ">Learn more ></a>
+                        <br><a href="buy.html" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
+                        <br><a href="learn.html" class="ps-3 text-decoration-none ">Learn more ></a>
                         <br>
                         <hr>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card text-center border-0">
+            <div class="col-12 col-md-4" >
+                <div class="card text-center border-0" style="position: static;">
                     <div class="card-image">
-                        <img src="compare_s9__gbbla3ej3p6y_small_2x.jpg" class="w-75" alt="image4">
+                        <img src="compare_s9__gbbla3ej3p6y_small_2x.jpg" class="w-75 buyPic" alt="image4">
                     </div>
-                    <div class="card-title h5">
+                    <div class="card-title h5" style="font-size: 19px;">
                         Apple Watch Series 9
                     </div>
                     <div class="card-text">
                         Powerful sensors,
-                        <br>advanced health features.
+                        <br>advanced health.
                         <br>
                         <br>From $399
-                        <br><a href="#" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
-                        <br><a href="#" class="ps-3 text-decoration-none ">Learn more ></a>
+                        <br><a href="buy.html" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
+                        <br><a href="learn.html" class="ps-3 text-decoration-none ">Learn more ></a>
                         <br>
                         <hr>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card text-center border-0">
+            <div class="col-12 col-md-4" >
+                <div class="card text-center border-0" style="position: static;">
                     <div class="card-image">
-                        <img src="compare_ultra2__fzfgtok6moeq_small_2x.jpg" class="w-75" alt="image4">
+                        <img src="compare_ultra2__fzfgtok6moeq_small_2x.jpg" class="w-75 buyPic" alt="image4">
                     </div>
                     <div class="card-title h5">
                         Apple Watch Ultra 2
@@ -240,13 +262,47 @@
                         <br>and capable.
                         <br>
                         <br>$799
-                        <br><a href="#" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
-                        <br><a href="#" class="ps-3 text-decoration-none ">Learn more ></a>
+                        <br><a href="buy.html" class="btn btn-primary rounded-5 mt-3 mb-2 w-50 h-25">Buy</a>
+                        <br><a href="learn.html" class="ps-3 text-decoration-none ">Learn more ></a>
                         <br>
                         <hr>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="mt-5 border border-0 text-center pt-4 bg-dark text-light">
+        <div class="pt-2 pb-2">
+            <button type="button" class="rounded-5 h6 text-dark bg-light">
+                <p class="p-3 pb-0 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-globe" style="margin-right: 8px;"></i> 
+                    <select class="selectpicker border-0 bg-light" data-width="fit ">
+                        <option class="border-0" data-content='<span class="flag-icon border-0 flag-icon-us"></span> English'>English</option>
+                        <option class="border-0" data-content='<span class="flag-icon border-0 flag-icon-mx"></span> ⵜⴰⵎⴰⵣⵉⵖⵜ'>ⵜⴰⵎⴰⵣⵉⵖⵜ</option>
+                        <option class="border-0" data-content='<span class="flag-icon border-0 flag-icon-mx"></span> العربية'>العربية</option>
+                        <option class="border-0" data-content='<span class="flag-icon border-0 flag-icon-mx"></span> Español'>Español</option>
+                        <option class="border-0" data-content='<span class="flag-icon border-0 flag-icon-mx"></span> Italiano'>Italiano</option>                    </select>
+                </p>
+            </button>
+        </div>
+        <div>
+            <p class="d-flex justify-content-center align-items-center ">
+                <a href="https://www.facebook.com/" class="text-decoration-none p-2 h4 rounded-5" ><i class="IconSocialMedia fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="text-decoration-none p-2 h4 rounded-5" ><i class="IconSocialMedia fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/" class="text-decoration-none p-2 h4 rounded-5" ><i class="IconSocialMedia fa-brands fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/" class="text-decoration-none p-2 h4 rounded-5" ><i class="IconSocialMedia fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/" class="text-decoration-none p-2 h4 rounded-5" ><i class="IconSocialMedia fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/" class="text-decoration-none p-2 h4 rounded-5" ><i class="IconSocialMedia fa-brands fa-linkedin"></i></a>
+            </p>
+        </div>
+        <h5>Terms and policies : </h5>
+        <div class="pt-3 h6">
+            <p><a href="" class="text-decoration-none h6"  style="color: #697c94;" >terms of use</a></p>
+            <p><a href="" class="text-decoration-none h6"  style="color: #697c94;" >Exchange and return policy</a></p>
+            <p><a href="" class="text-decoration-none h6"  style="color: #697c94;" >privacy policy</a></p>
+        </div>
+        <div class="pt-3 pb-1">
+            © yassine-ennatiqi-2024
         </div>
     </div>
     
